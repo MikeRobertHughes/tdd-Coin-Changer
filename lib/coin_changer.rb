@@ -11,8 +11,8 @@ class CoinChanger
 
   def changer
     coins.each do |key, value|
-      num_coins = (@change / value)
-      @change %= value
+      num_coins = (change / value)
+      self.change %= value
       purse[key] = num_coins
     end
     purse
